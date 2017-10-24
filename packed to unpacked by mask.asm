@@ -15,7 +15,7 @@ CODE SEGMENT                     ;STARTING OF DATA SEGMENT
     ASSUME  DS:DATA
     ASSUME  CS:CODE
     
-    START :
+    START:			 ; use colon after label without giving any space
             MOV AX, DATA         ;LOAD ADDRESS OF DATA SEGMENT TO AX
             MOV DS, AX           ;LOADS DS WITH THE ADDRESS OF DATA SEGMENT
             
